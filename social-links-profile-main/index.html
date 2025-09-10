@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+      /* border: 2px solid red; */
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    :root {
+      --white-color: hsl(0, 0%, 100%);
+      --green-color: hsl(75, 94%, 57%);
+      --Grey-700: hsl(0, 0%, 20%);
+      --Grey-800: hsl(0, 0%, 12%);
+      --Grey-900: hsl(0, 0%, 8%);
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      
+    }
+
+    .container {
+      
+      height: 100vh;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: var(--Grey-800);
+      color: var(--white-color);
+      width: 400px;
+      /* margin: auto; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 25px;
+      border-radius: 15px;
+      min-height: 450px;
+    }
+
+    .author {
+      /* border: 1px solid; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .author img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    .author .name {
+      font-weight: 400;
+      font-size: 23px;
+      margin-top: 15px;
+    }
+
+    .author span {
+      color: var(--green-color);
+      font-size: 13px;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 200;
+    }
+    .boxes{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .box{
+      width: 90%;
+      margin: auto;
+      /* border: 1px solid white; */
+      text-align: center;
+      padding: 16px;
+      border-radius: 10px;
+      background-color: var(--Grey-700);
+      cursor: pointer;
+    }
+    .boxes  :hover{
+      background-color: var(--green-color);
+      color: var(--Grey-900);
+      font-weight: bold;
+    }
+    @media (max-width:500px) {
+      .card{
+        width: 90vw;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+
+      <div class="author">
+        <img src="assets/images/avatar-jessica.jpeg" alt="">
+        <div class="name">
+
+          Jessica Randall
+
+        </div>
+        <span class="location">
+
+          London, United Kingdom
+        </span>
+      </div>
+      <p>
+
+        "Front-end developer and avid reader."
+      </p>
+      <div class="boxes">
+
+        <div class="box">
+          
+          GitHub
+        </div>
+      <div class="box">
+        Frontend Mentor
+
+      </div>
+      <div class="box">
+        LinkedIn
+        
+      </div>
+      <div class="box">
+        Twitter
+        
+      </div>
+      <div class="box">
+        Instagram
+        
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ahmed Raza</a>.
+  </div>
+</body>
+
+</html>
+<!-- - Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%) -->

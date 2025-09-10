@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Buttons Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 40px;
+      font-size: 18px;
+      color: #fff;
+      background: #ff7e5f;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.3);
+      transition: left 0.5s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    /* Different colors for each button */
+    .btn:nth-child(1) { background: #ff7e5f; }
+    .btn:nth-child(2) { background: #43cea2; }
+    .btn:nth-child(3) { background: #6a11cb; }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="../blog-preview-card-main/index.html" class="btn">Blog Preview Card</a>
+<a href="../qr-code-component-main/index.html" class="btn">QR Code Component</a>
+<a href="../social-links-profile-main/index.html" class="btn">Social Links Profile</a>
+
+  </div>
+</body>
+</html>
